@@ -89,11 +89,20 @@
     </div>
     <script src="https://code.getmdl.io/1.1.1/material.min.js"></script>
     <script>
-    $( "#follow" ).click(function() {
+      $( "#follow" ).click(function() {
+          goToLink();
+      });
 
+      $("#bytes").keyup(function(event){
+        if(event.keyCode == 13){
+          goToLink();
+        }
+      });
+
+      function goToLink() {
         var link = $("#bytes").val();
         var win = window.open(link, "_blank");
-    });
+      }
     </script>
   </body>
 </html>
