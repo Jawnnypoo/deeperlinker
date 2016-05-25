@@ -1,5 +1,5 @@
-# dembytes
+# deeperlinker
 
-For easy byte sized needs
+Test all the deep links
 
 Template from http://www.getmdl.io/templates/
